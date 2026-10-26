@@ -8,6 +8,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { WhatIBring } from './components/WhatIBring';
 import { Experience } from './components/Experience';
+import { Reviews } from './components/Reviews';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -17,7 +18,7 @@ export default function App() {
 
   // Track active section on scroll
   useEffect(() => {
-    const sectionIds = ['home', 'what-i-bring', 'experience', 'about', 'contact'];
+    const sectionIds = ['home', 'what-i-bring', 'experience', 'reviews', 'about', 'contact'];
 
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 180;
@@ -43,7 +44,7 @@ export default function App() {
       {/* 1. Header Navigation Bar */}
       <Navbar activeSection={activeSection} />
 
-      {/* Main Content: The Five Core Sections */}
+      {/* Main Content: The Core Sections */}
       <main>
         {/* 1. Home / Hero Section */}
         <Hero />
@@ -54,10 +55,13 @@ export default function App() {
         {/* 3. Projects & Experience Section */}
         <Experience />
 
-        {/* 4. About Section */}
+        {/* 4. Kind Words & Community Feedback Section */}
+        <Reviews />
+
+        {/* 5. About Section */}
         <About />
 
-        {/* 5. Contact Section */}
+        {/* 6. Contact Section */}
         <Contact />
       </main>
 
