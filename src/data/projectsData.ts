@@ -100,7 +100,7 @@ export const CONTRIBUTED_PROJECTS: ContributedProject[] = [
     images: [
       {
         id: 'agentbet-proof-1',
-        url: '/assets/aistudio/IMG_20261026_221103_440_436d1329.jpg',
+        url: '/assets/aistudio/image_93886676.png',
         title: 'AgentBet Telegram Community',
         caption: 'AgentBet Telegram group with 417+ members, with Mirah active on community moderation and member support.',
         category: 'moderation',

@@ -163,7 +163,7 @@ export const Experience: React.FC = () => {
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#DB2777] hover:text-pink-600 transition-colors cursor-pointer"
                     aria-label={`View details for ${project.name}`}
                   >
-                    <span>View Details & Proof</span>
+                    <span>{project.images && project.images.length > 0 ? 'View Details & Proof' : 'View Details'}</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </button>
                 </div>
